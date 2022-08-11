@@ -2,12 +2,11 @@ package main
 
 import "github.com/gin-gonic/gin"
 
+
 func main() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"hello": "world",
-		})
+		c.String(200, "<h1> Hello World </h1>")
 	})
 	r.Run(":8000")
 }

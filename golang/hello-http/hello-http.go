@@ -11,6 +11,6 @@ func main() {
 }
 
 func HelloServer(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hello world\n")
+    fmt.Fprintf(w, "<h1> Hello world </h1>")
 }
 
