@@ -4,5 +4,5 @@ WORKDIR /usr/src/hello
 RUN mvn package
 
 FROM tomcat:8-jre8
-COPY --from=mbuilder /usr/src/hello/webapp/target/webapp.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=mbuilder /usr/src/hello/webapp/target/hello-world.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080/tcp

@@ -8,7 +8,7 @@ mvn package
 
 ## Deploy WAR Package
 
-Copy it to the `webapps` directory of the directory pointed to by the `CATALINA_HOME` environment variable.
+Copy it to the `webapps/hello-world.war` file of the directory pointed to by the `CATALINA_HOME` environment variable.
 
 > ${CATALINA_HOME}/webapps
 > /usr/local/tomcat/webapps
